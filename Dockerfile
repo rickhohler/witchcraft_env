@@ -5,10 +5,6 @@ RUN  apt-get update \
 
 RUN apt-get --fix-broken install -y python-pycurl python-apt
 
-# Add repo for clang
-# RUN add-apt-repository ppa:kxstudio-team/builds
-# RUN apt-get update
-
 # Install dependencies
 RUN apt-get install -y binutils-dev clang-3.5 libelf-dev libgsl0-dev \
   libiberty-dev libreadline6 libreadline6-dev make uthash-dev
